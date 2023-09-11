@@ -15,19 +15,19 @@
 
 Instale-o com seu gerenciador preferido:
 
-- **npm**: `npm install extenso`
-- **Yarn**: `yarn add extenso`
+- **npm**: `npm install @ext-contabilidade/ex`
+- **Yarn**: `yarn add @ext-contabilidade/ex`
 
 ## Uso
 
 ```js
-var extenso = require('extenso')
+var extenso = require('@ext-contabilidade/ex')
 ```
 
 ## Sintaxe
 
 ```
-extenso(number[, options])
+ex(number[, options])
 ```
 
 ### `number`
@@ -72,9 +72,9 @@ Pode ser:
 ##### Exemplo
 
 ```js
-extenso('42') // 'quarenta e dois'
-extenso('42', { mode: 'number' }) // 'quarenta e dois'
-extenso('42', { mode: 'currency' }) // 'quarenta e dois reais'
+ex('42') // 'quarenta e dois'
+ex('42', { mode: 'number' }) // 'quarenta e dois'
+ex('42', { mode: 'currency' }) // 'quarenta e dois reais'
 ```
 
 #### `negative`
@@ -87,9 +87,9 @@ extenso('42', { mode: 'currency' }) // 'quarenta e dois reais'
 ##### Exemplo
 
 ```js
-extenso('-42') // 'quarenta e dois negativo'
-extenso('-42', { negative: 'formal' }) // 'quarenta e dois negativo'
-extenso('-42', { negative: 'informal' }) // 'menos quarenta e dois'
+ex('-42') // 'quarenta e dois negativo'
+ex('-42', { negative: 'formal' }) // 'quarenta e dois negativo'
+ex('-42', { negative: 'informal' }) // 'menos quarenta e dois'
 ```
 
 #### `locale`
@@ -104,9 +104,9 @@ A escrita de alguns números pode váriar de país para país (e talvez até de 
 ##### Exemplo
 
 ```js
-extenso('16') // 'dezesseis'
-extenso('16', { locale: 'br' }) // 'dezesseis'
-extenso('16', { locale: 'pt' }) // 'dezasseis'
+ex('16') // 'dezesseis'
+ex('16', { locale: 'br' }) // 'dezesseis'
+ex('16', { locale: 'pt' }) // 'dezasseis'
 ```
 
 #### `currency.type`
@@ -120,11 +120,11 @@ extenso('16', { locale: 'pt' }) // 'dezasseis'
 ##### Exemplo
 
 ```js
-extenso('42', { mode: 'currency' }) // 'quarenta e dois reais'
-extenso('42', { mode: 'currency', currency: { type: 'BRL' } }) // 'quarenta e dois reais'
-extenso('42', { mode: 'currency', currency: { type: 'EUR' } }) // 'quarenta e dois euros'
-extenso('42', { mode: 'currency', currency: { type: 'ECV' } }) // 'quarenta e dois escudos'
-extenso('42', { mode: 'currency', currency: { type: 'MZN' } }) // 'quarenta e dois meticais'
+ex('42', { mode: 'currency' }) // 'quarenta e dois reais'
+ex('42', { mode: 'currency', currency: { type: 'BRL' } }) // 'quarenta e dois reais'
+ex('42', { mode: 'currency', currency: { type: 'EUR' } }) // 'quarenta e dois euros'
+ex('42', { mode: 'currency', currency: { type: 'ECV' } }) // 'quarenta e dois escudos'
+ex('42', { mode: 'currency', currency: { type: 'MZN' } }) // 'quarenta e dois meticais'
 ```
 
 #### `number.gender`
@@ -139,9 +139,9 @@ Alguns números podem ser representados tanto no modo masculino quanto no modo f
 ##### Exemplo
 
 ```js
-extenso('42') // 'quarenta e dois'
-extenso('42', { number: { gender: 'm' } }) // 'quarenta e dois'
-extenso('42', { number: { gender: 'f' } }) // 'quarenta e duas'
+ex('42') // 'quarenta e dois'
+ex('42', { number: { gender: 'm' } }) // 'quarenta e dois'
+ex('42', { number: { gender: 'f' } }) // 'quarenta e duas'
 ```
 
 #### `number.decimal`
@@ -154,9 +154,9 @@ extenso('42', { number: { gender: 'f' } }) // 'quarenta e duas'
 ##### Exemplo
 
 ```js
-extenso('3,14') // 'três inteiros e quatorze centésimos'
-extenso('3,14', { number: { decimal: 'formal' } }) // 'três inteiros e quatorze centésimos'
-extenso('3,14', { number: { decimal: 'informal' } }) // 'três vírgula quatorze'
+ex('3,14') // 'três inteiros e quatorze centésimos'
+ex('3,14', { number: { decimal: 'formal' } }) // 'três inteiros e quatorze centésimos'
+ex('3,14', { number: { decimal: 'informal' } }) // 'três vírgula quatorze'
 ```
 
 #### `number.decimalSeparator`
@@ -174,9 +174,9 @@ milhar será o `,` (vírgula) e vice-versa.
 ##### Exemplo
 
 ```js
-extenso('3,14')
-extenso('3,14', { number: { decimalSeparator: 'comma' } })
-extenso('3.14', { number: { decimalSeparator: 'dot' } })
+ex('3,14')
+ex('3,14', { number: { decimalSeparator: 'comma' } })
+ex('3.14', { number: { decimalSeparator: 'dot' } })
 
 // 'três inteiros e quatorze centésimos'
 ```
