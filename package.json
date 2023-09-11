@@ -4,6 +4,7 @@
   "description": "Escrever números por extenso.",
   "main": "dist/extenso.min.js",
   "types": "index.d.ts",
+  "private": false,
   "files": [
     "dist",
     "index.d.ts"

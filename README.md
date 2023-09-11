@@ -21,7 +21,7 @@ Instale-o com seu gerenciador preferido:
 ## Uso
 
 ```js
-var extenso = require('@ext-contabilidade/ex')
+var ex = require('@ext-contabilidade/ex')
 ```
 
 ## Sintaxe
