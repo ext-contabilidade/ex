@@ -1,6 +1,4 @@
-# Extenso.js
-
-[![Build status](https://travis-ci.org/theuves/extenso.js.svg?branch=master)](https://travis-ci.org/theuves/extenso.js)
+## `@ext-contabilidade/ex`
 
 > Números por extenso com JavaScript.
 
