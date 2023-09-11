@@ -1,6 +1,6 @@
 {
   "name": "@ext-contabilidade/ex",
-  "version": "2.0.1",
+  "version": "1.0.0",
   "description": "Escrever números por extenso.",
   "main": "dist/extenso.min.js",
   "types": "index.d.ts",
