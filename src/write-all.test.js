@@ -9,7 +9,7 @@ test('Deve escrever números simples por extenso', (t) => {
   t.is(writeAll('1', { number: { gender: 'f' } }), 'uma')
   t.is(writeAll('2'), 'dois')
   t.is(writeAll('42'), 'quarenta e dois')
-  t.is(writeAll('100'),'cem')
+  t.is(writeAll('100'), 'cem')
   t.is(writeAll('1000'), 'mil')
   t.is(writeAll('1001'), 'mil e um')
 })
@@ -61,14 +61,13 @@ test('Deve escrever conforme a escala desejada', (t) => {
   t.is(writeAll('2.000.000.001', { scale: 'long' }), 'dois mil milhões e um')
   t.is(writeAll('2.000.000.001', { scale: 'long', number: { gender: 'f' } }), 'duas mil milhões e uma')
 
-  // "de reais"???
-  t.is(writeAll('2.000.000.001', { mode: 'currency', scale: 'short' }), 'dois bilhões e um de reais')
-  t.is(writeAll('2.000.000.001', { mode: 'currency', scale: 'long' }), 'dois mil milhões e um de reais')
+  t.is(writeAll('2.000.000.001', { mode: 'currency', scale: 'short' }), 'dois bilhões e um reais')
+  t.is(writeAll('2.000.000.001', { mode: 'currency', scale: 'long' }), 'dois mil milhões e um reais')
 })
 
 test('Deve verificar se uma opção é válida', (t) => {
-  t.true(isValidOpt('foo', [ 'foo', 'bar', 'baz' ]))
-  t.false(isValidOpt('bar', [ 'foo', 'baz' ]))
+  t.true(isValidOpt('foo', ['foo', 'bar', 'baz']))
+  t.false(isValidOpt('bar', ['foo', 'baz']))
 })
 
 test('Deve passar para o negativo um número escrito por extenso', (t) => {

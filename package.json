@@ -8,6 +8,11 @@
     "dist",
     "index.d.ts"
   ],
+  "engines": {
+    "node": "16.x",
+    "npm": "You must use yarn in this project!",
+    "yarn": "^1.22.x"
+  },
   "scripts": {
     "test": "ava --colors",
     "standard": "standard --fix",
